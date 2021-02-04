@@ -16,7 +16,7 @@ pipeline {
                 sh "/opt/apache-maven-3.6.3/bin/mvn package"
             }
         }
-        stage("Email Notification') {
+        stage('Email Notification') {
               mail bcc: '', body: 'Hi team, welcome to jenkins job alerts......', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'agyr12345678@gmail.com'
               
         }
